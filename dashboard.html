@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+            <h1>Blog Platform</h1>
+            <button id="logout-btn" class="btn-danger">Logout</button>
+        </div>
+
+        <div class="card">
+            <h3 id="form-heading">Create a New Post</h3>
+            <input type="hidden" id="blog-id">
+            <input type="text" id="blog-title" placeholder="Title">
+            <textarea id="blog-content" rows="4" placeholder="Write your content here..."></textarea>
+            <button id="save-blog-btn">Publish Post</button>
+            <button id="cancel-edit-btn" style="display:none; background:#333; color:white;">Cancel</button>
+        </div>
+
+        <h2>Recent Posts</h2>
+        <div id="blog-list"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
